@@ -1,0 +1,332 @@
+html,
+body,
+ol,
+ul,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select,
+div,
+img {
+  margin: 0;
+  padding: 0;
+}
+
+.nav {
+  background-color: #111;
+  height: 36px;
+  width: 1920px;
+}
+.nav .center {
+  width: 1200px;
+  line-height: 36px;
+  height: 36px;
+  font-size: 12px;
+  margin: 0 auto;
+}
+.nav .center .left {
+  color: #ccc;
+  float: left;
+}
+.nav .center .left li {
+  list-style: none;
+  float: left;
+  padding: 0px 8px;
+}
+.nav .center .left li a {
+  text-decoration: none;
+  color: #afafaf;
+}
+.nav .center .left li a:hover {
+  color: #fff;
+}
+.nav .center .right {
+  color: #ccc;
+  float: right;
+}
+.nav .center .right li {
+  list-style: none;
+  float: left;
+  padding: 0px 8px;
+}
+.nav .center .right li a {
+  text-decoration: none;
+  color: #afafaf;
+}
+.nav .center .right li a:hover {
+  color: #fff;
+}
+
+.nav-b {
+  height: 36px;
+  padding-top: 18px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  width: 1200px;
+}
+.nav-b ul {
+  height: 36px;
+}
+.nav-b ul li {
+  float: left;
+  margin-right: 23px;
+}
+.nav-b ul li a {
+  font-size: 16px;
+  text-decoration: none;
+  color: #333;
+  position: relative;
+  line-height: 40px;
+  display: block;
+}
+.nav-b input {
+  float: right;
+  border-radius: 50px;
+  border: 0;
+  background-color: #dfdfdf;
+  text-align: right;
+  width: 205px;
+  height: 30px;
+  line-height: 30px;
+}
+
+.banner {
+  position: relative;
+  width: 100%;
+  height: 550px;
+}
+.banner .lunbo {
+  width: 1200px;
+  margin: 0 auto;
+  list-style: none;
+  height: 550px;
+}
+.banner .lunbo li {
+  width: 100%;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  opacity: 0;
+  transition: all .5s;
+}
+.banner .lunbo ol {
+  list-style: none;
+  width: 180px;
+  margin: 0 auto;
+  height: 20px;
+  position: absolute;
+  bottom: 72px;
+  left: 1200px;
+}
+.banner .lunbo ol em {
+  float: left;
+  width: 10px;
+  height: 10px;
+  border: 1px solid;
+  border-radius: 50%;
+  margin-right: 4px;
+  color: #fff;
+  z-index: 333;
+}
+.banner .lunbo #left {
+  float: left;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  position: absolute;
+  top: 35%;
+  margin-left: 210PX;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.banner .lunbo #right {
+  float: right;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  text-decoration: none;
+  position: absolute;
+  top: 35%;
+  left: 1450px;
+  font-size: 40px;
+  background-color: rgba(0, 0, 0, 0.1);
+  color: #fff;
+}
+.banner .lunbo .list-1 {
+  z-index: 888;
+  width: 200px;
+  background-color: #fff;
+  margin: 16px 0;
+  position: absolute;
+  border-radius: 6px;
+}
+.banner .lunbo .list-1 a {
+  padding: 13px 16px;
+  display: block;
+  text-decoration: none;
+}
+.banner .lunbo span {
+  float: right;
+}
+
+.register-li {
+  width: 100%;
+  height: 82px;
+  margin: 0 auto;
+  position: absolute;
+  top: 601px;
+}
+.register-li img {
+  width: 1920px;
+  min-width: 1200px;
+}
+
+.register {
+  width: 1200px;
+  background-color: #fff;
+  border-radius: 8px;
+  position: absolute;
+  margin: -50px 351px;
+}
+.register .dr {
+  float: left;
+  width: 270px;
+  height: 62px;
+  color: #b8b1b1;
+  border-right: 1px solid #dfdfdf;
+  text-align: center;
+  margin: 25px 0;
+}
+.register .dr .touxiang {
+  border-radius: 50%;
+  display: inline-block;
+  background-color: #dfdfdf;
+  width: 50px;
+  height: 50px;
+}
+.register .dr a {
+  text-decoration: none;
+}
+.register dl {
+  float: left;
+  margin: 0px 10px;
+}
+.register dl dt {
+  width: 40px;
+  height: 40px;
+}
+.register dl dd {
+  text-align: center;
+}
+.register .gonggao {
+  float: left;
+  text-align: center;
+  font-size: 12px;
+  margin-left: 15px;
+  border-left: 1px solid #dfdfdf;
+}
+.register .gonggao ul {
+  width: 266px;
+  height: 44px;
+}
+.register .gonggao ul li {
+  float: left;
+  list-style: none;
+  width: 40px;
+  height: 40px;
+  margin-right: 48px;
+  margin-top: 10px;
+}
+.register .gonggao ul li a {
+  display: inline-block;
+  width: 50px;
+  height: 15px;
+  text-decoration: none;
+  margin: 10px 40px;
+}
+
+.list-4 {
+  width: 100%;
+  position: absolute;
+  top: 750px;
+}
+.list-4 ul {
+  width: 1200px;
+  margin: 0 auto;
+}
+.list-4 ul li {
+  list-style: none;
+}
+.list-4 ul li a {
+  float: left;
+  margin-left: 10px;
+}
+.list-4 ul li a img {
+  border-radius: 10px;
+  width: 290px;
+  height: 200px;
+}
+
+.rxdp, .jptj {
+  width: 100%;
+  height: 592px;
+  position: absolute;
+  top: 1000px;
+  margin: 0 auto;
+}
+.rxdp h2, .jptj h2 {
+  width: 1200px;
+  margin: 0 auto 16px;
+}
+.rxdp .dp, .jptj .dp {
+  width: 1200px;
+  margin: 0 auto;
+}
+.rxdp .dp a, .jptj .dp a {
+  float: left;
+}
+.rxdp .dp ul, .jptj .dp ul {
+  float: left;
+}
+.rxdp .dp ul li, .jptj .dp ul li {
+  width: 220px;
+  height: 290px;
+  margin: 0px 5px 5px;
+  border-radius: 10px;
+  background-color: #dfdfdf;
+  list-style: none;
+  float: left;
+}
+.rxdp .dp ul li a, .jptj .dp ul li a {
+  margin: 0 auto;
+  text-decoration: none;
+  width: 200px;
+  text-align: center;
+}
+
+.jptj {
+  position: absolute;
+  top: 1650px;
+}
+
+/*# sourceMappingURL=reset.css.map */

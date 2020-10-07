@@ -1,0 +1,377 @@
+    @charset "utf-8"; //设置中文字符
+    $size:14px;
+    $family: "微软雅黑";
+    $list-s:list-style;
+    $n:none;
+    $b:block;
+    $center:1200px;
+    @mixin borderstyle($size:1px, $style:solid, $color:#111) {
+        border: $size $style $color;
+    } //边框
+    @mixin position($direction:right, $positionvalue:absolute, $value1:10px, $value2:10px) {
+        @if($direction==right) {
+            position: $positionvalue;
+            right: $value1;
+            bottom: $value2;
+        }
+        @else {
+            position: $positionvalue;
+            left: $value1;
+            top: $value2;
+        }
+    } //定位
+    @mixin clearfix {
+        display: inline-block;
+        &:after {
+            content: ".";
+            display: block;
+            height: 0;
+            clear: both;
+            visibility: hidden;
+        }
+        * html & {
+            height: 1px
+        }
+    }
+    
+    %cleafix {
+        //被继承的代码不会编码
+        content: '';
+        clear: both;
+        overflow: hidden;
+        display: block;
+        height: 0;
+    }
+    
+    html,
+    body,
+    ol,
+    ul,
+    li,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    p,
+    th,
+    td,
+    dl,
+    dd,
+    form,
+    fieldset,
+    legend,
+    input,
+    textarea,
+    select,
+    div,
+    img {
+        margin: 0;
+        padding: 0;
+    }
+    
+    .nav {
+        background-color: #111;
+        height: 36px;
+        width: 1920px;
+        .center {
+            width: $center;
+            line-height: 36px;
+            height: 36px;
+            font-size: 12px;
+            margin: 0 auto;
+            .left {
+                color: #ccc;
+                float: left;
+                li {
+                    #{$list-s}: $n;
+                    float: left;
+                    padding: 0px 8px;
+                    a {
+                        text-decoration: $n;
+                        color: #afafaf;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+            .right {
+                color: #ccc;
+                float: right;
+                li {
+                    #{$list-s}: $n;
+                    float: left;
+                    padding: 0px 8px;
+                    a {
+                        text-decoration: $n;
+                        color: #afafaf;
+                        &:hover {
+                            color: #fff;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    .nav-b {
+        height: 36px;
+        padding-top: 18px;
+        padding-bottom: 15px;
+        margin: 0 auto;
+        width: $center;
+        ul {
+            height: 36px;
+            li {
+                float: left;
+                margin-right: 23px;
+                a {
+                    font-size: 16px;
+                    text-decoration: $n;
+                    color: #333;
+                    position: relative;
+                    line-height: 40px;
+                    display: block;
+                }
+            }
+        }
+        input {
+            float: right;
+            border-radius: 50px;
+            border: 0;
+            background-color: #dfdfdf;
+            text-align: right;
+            width: 205px;
+            height: 30px;
+            line-height: 30px;
+        }
+    }
+    
+    .banner {
+        position: relative;
+        width: 100%;
+        height: 550px;
+        .lunbo {
+            width: $center;
+            margin: 0 auto;
+            list-style: $n;
+            height: 550px;
+            li {
+                width: 100%;
+                position: absolute;
+                left: 0px;
+                top: 0px;
+                opacity: 0;
+                transition: all .5s;
+            }
+            ol {
+                list-style: $n;
+                width: 180px;
+                margin: 0 auto;
+                height: 20px;
+                position: absolute;
+                bottom: 72px;
+                left: 1200px;
+                em {
+                    float: left;
+                    width: 10px;
+                    height: 10px;
+                    border: 1px solid;
+                    border-radius: 50%;
+                    margin-right: 4px;
+                    color: #fff;
+                    z-index: 333;
+                }
+            }
+            #left {
+                float: left;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 50px;
+                text-decoration: $n;
+                position: absolute;
+                top: 35%;
+                margin-left: 210PX;
+                font-size: 40px;
+                background-color: rgba($color: #000000, $alpha: 0.1);
+                color: #fff;
+            }
+            #right {
+                float: right;
+                width: 60px;
+                height: 60px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 50px;
+                text-decoration: $n;
+                position: absolute;
+                top: 35%;
+                left: 1450px;
+                font-size: 40px;
+                background-color: rgba($color: #000000, $alpha: 0.1);
+                color: #fff;
+            }
+            .list-1 {
+                z-index: 888;
+                width: 200px;
+                background-color: #fff;
+                margin: 16px 0;
+                position: absolute;
+                border-radius: 6px;
+                a {
+                    padding: 13px 16px;
+                    display: block;
+                    text-decoration: $n;
+                }
+            }
+            span {
+                float: right;
+            }
+        }
+    }
+    
+    .register-li {
+        width: 100%;
+        height: 82px;
+        margin: 0 auto;
+        position: absolute;
+        top: 601px;
+        img {
+            width: 1920px;
+            min-width: 1200px;
+        }
+    }
+    
+    .register {
+        width: $center;
+        background-color: #fff;
+        border-radius: 8px;
+        position: absolute;
+        margin: -50px 351px;
+        .dr {
+            float: left;
+            width: 270px;
+            height: 62px;
+            color: #b8b1b1;
+            border-right: 1px solid #dfdfdf;
+            text-align: center;
+            margin: 25px 0;
+            .touxiang {
+                border-radius: 50%;
+                display: inline-block;
+                background-color: #dfdfdf;
+                width: 50px;
+                height: 50px;
+            }
+            a {
+                text-decoration: $n;
+            }
+        }
+        dl {
+            float: left;
+            margin: 0px 10px;
+            dt {
+                width: 40px;
+                height: 40px;
+            }
+            dd {
+                text-align: center;
+            }
+        }
+        .gonggao {
+            float: left;
+            text-align: center;
+            font-size: 12px;
+            margin-left: 15px;
+            border-left: 1px solid #dfdfdf;
+            ul {
+                width: 266px;
+                height: 44px;
+                li {
+                    float: left;
+                    list-style: $n;
+                    width: 40px;
+                    height: 40px;
+                    margin-right: 48px;
+                    margin-top: 10px;
+                    a {
+                        display: inline-block;
+                        width: 50px;
+                        height: 15px;
+                        text-decoration: $n;
+                        margin: 10px 40px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .list-4 {
+        width: 100%;
+        position: absolute;
+        top: 750px;
+        ul {
+            width: $center;
+            margin: 0 auto;
+            li {
+                list-style: $n;
+                a {
+                    float: left;
+                    margin-left: 10px;
+                    img {
+                        border-radius: 10px;
+                        width: 290px;
+                        height: 200px;
+                    }
+                }
+            }
+        }
+    }
+    
+    .rxdp {
+        width: 100%;
+        height: 592px;
+        position: absolute;
+        top: 1000px;
+        margin: 0 auto;
+        h2 {
+            width: $center;
+            margin: 0 auto 16px;
+        }
+        .dp {
+            width: $center;
+            margin: 0 auto;
+            a {
+                float: left;
+            }
+            ul {
+                float: left;
+                // text-align: center;
+                li {
+                    width: 220px;
+                    height: 290px;
+                    margin: 0px 5px 5px;
+                    border-radius: 10px;
+                    background-color: #dfdfdf;
+                    list-style: $n;
+                    float: left;
+                    a {
+                        margin: 0 auto;
+                        text-decoration: $n;
+                        width: 200px;
+                        text-align: center;
+                    }
+                }
+            }
+        }
+    }
+    
+    .jptj {
+        @extend .rxdp;
+        position: absolute;
+        top: 1650px;
+    }
